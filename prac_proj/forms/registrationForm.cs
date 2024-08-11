@@ -36,5 +36,13 @@ namespace prac_proj
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            loginForm log = new loginForm();
+            log.Show();
+
+            this.Hide();
+        }
     }
 }

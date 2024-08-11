@@ -1,6 +1,6 @@
 ﻿namespace prac_proj.forms
 {
-    partial class maindashboard
+    partial class mainDashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -28,166 +28,127 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(maindashboard));
-            flowLayoutPanel1 = new FlowLayoutPanel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainDashboard));
             panel1 = new Panel();
-            pictureBox1 = new PictureBox();
-            label1 = new Label();
             panel2 = new Panel();
-            panel4 = new Panel();
-            panel3 = new Panel();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            flowLayoutPanel1.SuspendLayout();
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
+            depositButton = new Button();
+            withdrawButton = new Button();
+            balanceButton = new Button();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
-            panel4.SuspendLayout();
-            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // flowLayoutPanel1
-            // 
-            flowLayoutPanel1.BackColor = Color.FromArgb(1, 15, 74);
-            flowLayoutPanel1.Controls.Add(panel1);
-            flowLayoutPanel1.Dock = DockStyle.Left;
-            flowLayoutPanel1.Location = new Point(0, 0);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(208, 731);
-            flowLayoutPanel1.TabIndex = 0;
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(0, 5, 52);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(3, 3);
+            panel1.BackColor = Color.FromArgb(1, 0, 72);
+            panel1.Controls.Add(panel2);
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(205, 153);
+            panel1.Size = new Size(176, 743);
             panel1.TabIndex = 0;
             // 
-            // pictureBox1
+            // panel2
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(58, 9);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(85, 80);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            panel2.BackColor = Color.FromArgb(3, 0, 46);
+            panel2.Controls.Add(label1);
+            panel2.Controls.Add(pictureBox1);
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(176, 152);
+            panel2.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(52, 106);
+            label1.Location = new Point(54, 106);
             label1.Name = "label1";
-            label1.Size = new Size(102, 23);
+            label1.Size = new Size(61, 28);
             label1.TabIndex = 1;
-            label1.Text = "USERNAME";
-            label1.Click += label1_Click;
+            label1.Text = "USER";
             // 
-            // panel2
+            // pictureBox1
             // 
-            panel2.BackColor = Color.Red;
-            panel2.Controls.Add(label2);
-            panel2.Location = new Point(227, 167);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(246, 192);
-            panel2.TabIndex = 1;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(36, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(93, 81);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
-            // panel4
+            // depositButton
             // 
-            panel4.BackColor = Color.SpringGreen;
-            panel4.Controls.Add(label4);
-            panel4.Location = new Point(521, 167);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(246, 192);
-            panel4.TabIndex = 1;
-            panel4.Paint += panel4_Paint;
+            depositButton.BackColor = Color.FromArgb(15, 66, 232);
+            depositButton.FlatStyle = FlatStyle.Flat;
+            depositButton.Font = new Font("Lexend Deca", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            depositButton.ForeColor = Color.White;
+            depositButton.Location = new Point(333, 160);
+            depositButton.Name = "depositButton";
+            depositButton.Size = new Size(292, 223);
+            depositButton.TabIndex = 1;
+            depositButton.Text = "DEPOSIT";
+            depositButton.UseVisualStyleBackColor = false;
+            depositButton.Click += button1_Click;
             // 
-            // panel3
+            // withdrawButton
             // 
-            panel3.BackColor = Color.Turquoise;
-            panel3.Controls.Add(label3);
-            panel3.Location = new Point(817, 167);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(246, 192);
-            panel3.TabIndex = 1;
+            withdrawButton.BackColor = Color.Red;
+            withdrawButton.FlatStyle = FlatStyle.Flat;
+            withdrawButton.Font = new Font("Lexend Deca", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            withdrawButton.ForeColor = Color.White;
+            withdrawButton.Location = new Point(709, 160);
+            withdrawButton.Name = "withdrawButton";
+            withdrawButton.Size = new Size(292, 223);
+            withdrawButton.TabIndex = 1;
+            withdrawButton.Text = "WITHDRAW";
+            withdrawButton.UseVisualStyleBackColor = false;
+            withdrawButton.Click += withdrawButton_Click;
             // 
-            // label2
+            // balanceButton
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(63, 81);
-            label2.Name = "label2";
-            label2.Size = new Size(107, 23);
-            label2.TabIndex = 1;
-            label2.Text = "WITHDRAW";
-            label2.Click += label1_Click;
+            balanceButton.BackColor = Color.Gray;
+            balanceButton.FlatStyle = FlatStyle.Flat;
+            balanceButton.Font = new Font("Lexend Deca", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            balanceButton.ForeColor = Color.White;
+            balanceButton.Location = new Point(523, 442);
+            balanceButton.Name = "balanceButton";
+            balanceButton.Size = new Size(292, 223);
+            balanceButton.TabIndex = 1;
+            balanceButton.Text = "BALANCE";
+            balanceButton.UseVisualStyleBackColor = false;
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(56, 81);
-            label3.Name = "label3";
-            label3.Size = new Size(147, 23);
-            label3.TabIndex = 1;
-            label3.Text = "CHECK BALANCE";
-            label3.Click += label1_Click;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(80, 81);
-            label4.Name = "label4";
-            label4.Size = new Size(80, 23);
-            label4.TabIndex = 1;
-            label4.Text = "DEPOSIT";
-            label4.Click += label1_Click;
-            // 
-            // maindashboard
+            // mainDashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1084, 731);
-            Controls.Add(panel3);
-            Controls.Add(panel4);
-            Controls.Add(panel2);
-            Controls.Add(flowLayoutPanel1);
-            Name = "maindashboard";
-            Text = "maindashboard";
-            flowLayoutPanel1.ResumeLayout(false);
+            ClientSize = new Size(1131, 743);
+            Controls.Add(balanceButton);
+            Controls.Add(withdrawButton);
+            Controls.Add(depositButton);
+            Controls.Add(panel1);
+            Name = "mainDashboard";
+            Text = "mainDashboard";
             panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private FlowLayoutPanel flowLayoutPanel1;
         private Panel panel1;
+        private Panel panel2;
         private Label label1;
         private PictureBox pictureBox1;
-        private Panel panel2;
-        private Label label2;
-        private Panel panel4;
-        private Label label4;
-        private Panel panel3;
-        private Label label3;
+        private Button depositButton;
+        private Button withdrawButton;
+        private Button balanceButton;
     }
 }

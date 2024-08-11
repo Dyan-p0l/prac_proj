@@ -17,3 +17,7 @@ C:\Users\john paul\source\repos\prac_proj\prac_proj\obj\Debug\net8.0-windows\pra
 C:\Users\john paul\source\repos\prac_proj\prac_proj\obj\Debug\net8.0-windows\prac_proj.loginForm.resources
 C:\Users\john paul\source\repos\prac_proj\prac_proj\obj\Debug\net8.0-windows\prac_proj.registrationForm.resources
 C:\Users\john paul\source\repos\prac_proj\prac_proj\obj\Debug\net8.0-windows\prac_proj.forms.maindashboard.resources
+C:\Users\john paul\source\repos\prac_proj\prac_proj\obj\Debug\net8.0-windows\prac_proj.forms.withdraw.resources
+C:\Users\john paul\source\repos\prac_proj\prac_proj\obj\Debug\net8.0-windows\prac_proj.sourcelink.json
+C:\Users\john paul\source\repos\prac_proj\prac_proj\obj\Debug\net8.0-windows\prac_proj.forms.deposit.resources
+C:\Users\john paul\source\repos\prac_proj\prac_proj\obj\Debug\net8.0-windows\prac_proj.forms.Balance.resources

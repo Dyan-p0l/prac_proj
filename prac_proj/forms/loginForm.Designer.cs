@@ -53,7 +53,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Lexend Deca", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.DarkBlue;
-            label1.Location = new Point(123, 35);
+            label1.Location = new Point(127, 37);
             label1.Name = "label1";
             label1.Size = new Size(132, 54);
             label1.TabIndex = 1;
@@ -71,10 +71,11 @@
             panel2.Controls.Add(label3);
             panel2.Controls.Add(label2);
             panel2.Controls.Add(label1);
-            panel2.Location = new Point(526, 77);
+            panel2.Location = new Point(528, 58);
             panel2.Name = "panel2";
             panel2.Size = new Size(376, 604);
             panel2.TabIndex = 2;
+            panel2.TabStop = true;
             panel2.Paint += panel2_Paint;
             // 
             // button1

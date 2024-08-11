@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(registrationForm));
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
+            button1 = new Button();
             dateTimePicker1 = new DateTimePicker();
             comboBox1 = new ComboBox();
             textBox4 = new TextBox();
@@ -62,6 +63,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(button1);
             panel1.Controls.Add(dateTimePicker1);
             panel1.Controls.Add(comboBox1);
             panel1.Controls.Add(textBox4);
@@ -81,9 +83,22 @@
             panel1.TabIndex = 1;
             panel1.Paint += panel1_Paint;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.DarkBlue;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(195, 563);
+            button1.Name = "button1";
+            button1.Size = new Size(107, 42);
+            button1.TabIndex = 8;
+            button1.Text = "Register";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(72, 546);
+            dateTimePicker1.Location = new Point(78, 519);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(260, 27);
             dateTimePicker1.TabIndex = 7;
@@ -92,7 +107,7 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Male", "Female" });
-            comboBox1.Location = new Point(69, 381);
+            comboBox1.Location = new Point(75, 354);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(158, 28);
             comboBox1.TabIndex = 6;
@@ -100,7 +115,7 @@
             // textBox4
             // 
             textBox4.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox4.Location = new Point(69, 457);
+            textBox4.Location = new Point(75, 430);
             textBox4.Multiline = true;
             textBox4.Name = "textBox4";
             textBox4.PlaceholderText = "+63 9";
@@ -110,7 +125,7 @@
             // textBox2
             // 
             textBox2.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(69, 298);
+            textBox2.Location = new Point(75, 271);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.PlaceholderText = "Enter address";
@@ -120,7 +135,7 @@
             // textBox1
             // 
             textBox1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(69, 217);
+            textBox1.Location = new Point(75, 190);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Enter last name";
@@ -130,7 +145,7 @@
             // accountIdField
             // 
             accountIdField.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            accountIdField.Location = new Point(69, 139);
+            accountIdField.Location = new Point(75, 112);
             accountIdField.Multiline = true;
             accountIdField.Name = "accountIdField";
             accountIdField.PlaceholderText = "Enter first name";
@@ -142,7 +157,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             label7.ForeColor = Color.DarkBlue;
-            label7.Location = new Point(69, 514);
+            label7.Location = new Point(75, 487);
             label7.Name = "label7";
             label7.Size = new Size(72, 20);
             label7.TabIndex = 3;
@@ -154,7 +169,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             label6.ForeColor = Color.DarkBlue;
-            label6.Location = new Point(69, 433);
+            label6.Location = new Point(75, 406);
             label6.Name = "label6";
             label6.Size = new Size(188, 20);
             label6.TabIndex = 3;
@@ -166,7 +181,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             label5.ForeColor = Color.DarkBlue;
-            label5.Location = new Point(69, 348);
+            label5.Location = new Point(75, 321);
             label5.Name = "label5";
             label5.Size = new Size(33, 20);
             label5.TabIndex = 3;
@@ -178,7 +193,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             label4.ForeColor = Color.DarkBlue;
-            label4.Location = new Point(69, 275);
+            label4.Location = new Point(75, 248);
             label4.Name = "label4";
             label4.Size = new Size(63, 20);
             label4.TabIndex = 3;
@@ -190,7 +205,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             label3.ForeColor = Color.DarkBlue;
-            label3.Location = new Point(69, 194);
+            label3.Location = new Point(75, 167);
             label3.Name = "label3";
             label3.Size = new Size(77, 20);
             label3.TabIndex = 3;
@@ -202,7 +217,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             label2.ForeColor = Color.DarkBlue;
-            label2.Location = new Point(69, 116);
+            label2.Location = new Point(75, 89);
             label2.Name = "label2";
             label2.Size = new Size(80, 20);
             label2.TabIndex = 3;
@@ -252,5 +267,6 @@
         private TextBox textBox2;
         private TextBox textBox1;
         private DateTimePicker dateTimePicker1;
+        private Button button1;
     }
 }
